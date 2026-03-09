@@ -280,6 +280,7 @@ a {
   grid-auto-flow: row;
   place-content: center;
   place-items: center;
+  margin-bottom: 20px;
   display: flex;
 }
 
@@ -2600,6 +2601,125 @@ a {
   border-radius: 15px;
 }
 
+.testimonial-card {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #e3f0fe;
+  border: 1px solid #ffffff1c;
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+
+.testimonial-client-info-wrapper {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+.testimonial-client-image {
+  border-radius: 76px;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 45px;
+  overflow: hidden;
+}
+
+.testimonial-client-name {
+  line-height: 150%;
+}
+
+.testimonial-client-designation {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.testimonial-feedback-content {
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.container-21 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  display: flex;
+}
+
+.text-weight-medium {
+  color: #fff;
+  font-weight: 500;
+}
+
+.button-primary {
+  grid-row-gap: .25rem;
+  color: #efefef;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #151515;
+  border-radius: .2rem;
+  flex-direction: column;
+  padding: .8rem 2.5rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.455, .03, .515, .955);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-primary:hover {
+  background-color: #ee64ff;
+}
+
+.grid {
+  grid-column-gap: 2rem;
+  grid-row-gap: 5.875rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  place-items: center;
+  display: grid;
+}
+
+.card {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  text-align: left;
+  background-color: #1b1d1e;
+  border-radius: 15px;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 3.5rem 4.3rem;
+  display: flex;
+}
+
+.big-text {
+  color: #b2b2b2;
+  font-size: 10.5rem;
+  line-height: 1;
+}
+
+.top-content {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  flex-flow: column;
+  align-items: flex-start;
+  max-width: 29ch;
+  display: flex;
+}
+
+.number {
+  opacity: .2;
+}
+
 @media screen and (min-width: 1440px) {
   .hero-heading-h1 {
     font-family: Inter Tight, sans-serif;
@@ -3230,6 +3350,31 @@ a {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
   }
+
+  .testimonial-card {
+    padding: 16px;
+  }
+
+  .testimonial-client-info-wrapper {
+    padding-bottom: 10px;
+  }
+
+  .grid {
+    grid-row-gap: 2rem;
+    flex-flow: column;
+    width: 100%;
+    display: flex;
+  }
+
+  .card {
+    flex-flow: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .top-content {
+    max-width: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3279,6 +3424,16 @@ a {
   .navigation-link.for-footer {
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .card {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    flex-flow: column;
+  }
+
+  .big-text {
+    font-size: 9rem;
   }
 }
 
@@ -3593,6 +3748,28 @@ a {
     grid-row-gap: 5px;
     flex-flow: column;
   }
+
+  .testimonial-card {
+    border-width: 0;
+    border-color: #fff0;
+  }
+
+  .testimonial-feedback-content {
+    font-size: 16px;
+  }
+
+  .button-primary {
+    align-items: center;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .big-text {
+    font-size: 8rem;
+  }
 }
 
 #w-node-_555d0844-48b3-4229-fe52-cbdb4d30d287-d01acd17, #w-node-_555d0844-48b3-4229-fe52-cbdb4d30d289-d01acd17 {
@@ -3600,10 +3777,6 @@ a {
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_9d05b4dd-2469-26fc-511a-30d212818f48-d01acd15 {
-    grid-column: span 3 / span 3;
-  }
-
   #w-node-_555d0844-48b3-4229-fe52-cbdb4d30d287-d01acd17, #w-node-_555d0844-48b3-4229-fe52-cbdb4d30d289-d01acd17 {
     grid-column: span 1 / span 1;
   }
